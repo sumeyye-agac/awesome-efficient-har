@@ -173,10 +173,6 @@ def render_readme(entries: list[dict]) -> str:
     lines.append("- [TFLite int8 export recipe](recipes/tflite_int8_export.md)")
     lines.append("- [Android latency benchmark recipe](recipes/android_latency_benchmark.md)")
     lines.append("")
-    lines.append("## License")
-    lines.append("")
-    lines.append("List content is released under [CC0-1.0](LICENSE).")
-    lines.append("")
 
     return "\n".join(lines)
 
