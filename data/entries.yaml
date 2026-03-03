@@ -1,0 +1,521 @@
+entries:
+  - category: datasets
+    title: UCI HAR Dataset
+    year: 2012
+    tags: [dataset, benchmark]
+    links:
+      dataset: https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones
+    description: Smartphone inertial HAR benchmark with subject-wise protocol.
+
+  - category: datasets
+    title: WISDM
+    tags: [dataset]
+    links:
+      dataset: https://www.cis.fordham.edu/wisdm/dataset.php
+    description: Phone/watch accelerometer HAR data with classic activity labels.
+
+  - category: datasets
+    title: PAMAP2 Physical Activity Monitoring
+    year: 2012
+    tags: [dataset, benchmark]
+    links:
+      dataset: https://archive.ics.uci.edu/dataset/231/pamap2+physical+activity+monitoring
+    description: Multi-sensor IMU and heart-rate recordings.
+
+  - category: datasets
+    title: OPPORTUNITY Activity Recognition
+    year: 2012
+    tags: [dataset, benchmark]
+    links:
+      dataset: https://archive.ics.uci.edu/dataset/226/opportunity+activity+recognition
+    description: Multimodal ambient and wearable sensor dataset.
+
+  - category: datasets
+    title: mHealth
+    tags: [dataset]
+    links:
+      dataset: https://archive.ics.uci.edu/dataset/319/mhealth+dataset
+    description: Body-worn sensor dataset for activity monitoring.
+
+  - category: datasets
+    title: RealWorld HAR
+    tags: [dataset]
+    links:
+      dataset: https://www.uni-mannheim.de/dws/research/projects/activity-recognition/
+    description: Smartphone and smartwatch placement diversity in real-world conditions.
+
+  - category: datasets
+    title: USC-HAD
+    year: 2012
+    tags: [dataset]
+    links:
+      dataset: https://sipi.usc.edu/had/
+    description: Wearable sensor activities with multiple subjects and repetitions.
+
+  - category: datasets
+    title: UniMiB SHAR
+    year: 2016
+    tags: [dataset]
+    links:
+      dataset: http://www.sal.disco.unimib.it/technologies/unimib-shar/
+    description: Smartphone accelerometer ADL and fall events.
+
+  - category: datasets
+    title: SisFall
+    year: 2017
+    tags: [dataset]
+    links:
+      dataset: https://ieee-dataport.org/open-access/sisfall-and-fall-detection-datasets
+    description: Fall detection focused wearable dataset with older-adult scenarios.
+
+  - category: datasets
+    title: Heterogeneity HAR (HHAR)
+    year: 2015
+    tags: [dataset, benchmark]
+    links:
+      dataset: https://archive.ics.uci.edu/dataset/344/heterogeneity+activity+recognition
+    description: Device and user heterogeneity benchmark across phones and watches.
+
+  - category: datasets
+    title: MotionSense
+    year: 2019
+    tags: [dataset, code]
+    links:
+      code: https://github.com/mmalekzadeh/motionsense
+    description: iPhone motion data for activity and user context tasks.
+
+  - category: datasets
+    title: SHL Dataset (Sussex-Huawei Locomotion)
+    tags: [dataset, benchmark]
+    links:
+      dataset: http://www.shl-dataset.org/
+    description: Large-scale multimodal wearable and phone locomotion challenge data.
+
+  - category: datasets
+    title: ExtraSensory
+    year: 2016
+    tags: [dataset]
+    links:
+      dataset: http://extrasensory.ucsd.edu/
+    description: Smartphone, smartwatch, and context labels in the wild.
+
+  - category: datasets
+    title: DSADS (Daily and Sports Activities)
+    tags: [dataset]
+    links:
+      dataset: https://archive.ics.uci.edu/dataset/256/daily+and+sports+activities
+    description: Body-worn motion sensors across daily and sport actions.
+
+  - category: lightweight_architectures
+    title: MobileNets
+    year: 2017
+    tags: [paper, efficient, on-device]
+    links:
+      paper: https://arxiv.org/abs/1704.04861
+    description: Depthwise separable convolutions widely reused for mobile HAR backbones.
+
+  - category: lightweight_architectures
+    title: MobileNetV2
+    year: 2018
+    tags: [paper, efficient, on-device]
+    links:
+      paper: https://arxiv.org/abs/1801.04381
+    description: Inverted residuals and linear bottlenecks for compact sensor models.
+
+  - category: lightweight_architectures
+    title: MobileNetV3
+    year: 2019
+    tags: [paper, efficient, on-device]
+    links:
+      paper: https://arxiv.org/abs/1905.02244
+    description: Hardware-aware search and lightweight attention for edge latency.
+
+  - category: lightweight_architectures
+    title: ShuffleNet
+    year: 2017
+    tags: [paper, efficient]
+    links:
+      paper: https://arxiv.org/abs/1707.01083
+    description: Pointwise group convolution and channel shuffle for low FLOPs.
+
+  - category: lightweight_architectures
+    title: ShuffleNet V2
+    year: 2018
+    tags: [paper, efficient, on-device]
+    links:
+      paper: https://arxiv.org/abs/1807.11164
+    description: Practical efficiency guidelines for real hardware throughput.
+
+  - category: lightweight_architectures
+    title: SqueezeNet
+    year: 2016
+    tags: [paper, efficient]
+    links:
+      paper: https://arxiv.org/abs/1602.07360
+    description: Fire modules for very small parameter footprint.
+
+  - category: lightweight_architectures
+    title: EfficientNet
+    year: 2019
+    tags: [paper, efficient]
+    links:
+      paper: https://arxiv.org/abs/1905.11946
+    description: Compound scaling principles adaptable to time-series CNNs.
+
+  - category: lightweight_architectures
+    title: TCN Sequence Modeling
+    year: 2018
+    tags: [paper, efficient]
+    links:
+      paper: https://arxiv.org/abs/1803.01271
+    description: Strong and efficient sequence baseline for sensor windows.
+
+  - category: lightweight_architectures
+    title: ROCKET
+    year: 2019
+    tags: [paper, efficient, benchmark]
+    links:
+      paper: https://arxiv.org/abs/1910.13051
+    description: Fast random convolution features for time-series classification.
+
+  - category: lightweight_architectures
+    title: MiniROCKET
+    year: 2020
+    tags: [paper, efficient, benchmark]
+    links:
+      paper: https://arxiv.org/abs/2012.08791
+    description: Faster deterministic ROCKET variant with strong speed-accuracy tradeoff.
+
+  - category: lightweight_architectures
+    title: InceptionTime
+    year: 2019
+    tags: [paper, benchmark]
+    links:
+      paper: https://arxiv.org/abs/1909.04939
+    description: Competitive time-series architecture often used as HAR baseline.
+
+  - category: lightweight_architectures
+    title: DeepConvLSTM for HAR
+    year: 2016
+    tags: [paper, benchmark]
+    links:
+      paper: https://www.mdpi.com/1424-8220/16/1/115
+    description: Early strong wearable HAR model combining temporal conv and recurrence.
+
+  - category: lightweight_architectures
+    title: DeepSense
+    year: 2017
+    tags: [paper, on-device]
+    links:
+      paper: https://dl.acm.org/doi/10.1145/3090076.3090087
+    description: Unified deep architecture for mobile sensing signals and tasks.
+
+  - category: lightweight_architectures
+    title: TinyML Model Optimization Techniques for Embedded AI
+    year: 2020
+    tags: [paper, efficient, on-device]
+    links:
+      paper: https://arxiv.org/abs/2003.04821
+    description: Compact-model perspective for MCU and edge deployments.
+
+  - category: attention_modules
+    title: Squeeze-and-Excitation Networks
+    year: 2017
+    tags: [paper, attention, efficient]
+    links:
+      paper: https://arxiv.org/abs/1709.01507
+    description: Channel reweighting block often adapted to 1D sensor CNNs.
+
+  - category: attention_modules
+    title: CBAM
+    year: 2018
+    tags: [paper, attention]
+    links:
+      paper: https://arxiv.org/abs/1807.06521
+    description: Lightweight channel and spatial attention plug-in module.
+
+  - category: attention_modules
+    title: ECA-Net
+    year: 2019
+    tags: [paper, attention, efficient]
+    links:
+      paper: https://arxiv.org/abs/1910.03151
+    description: Efficient channel attention without heavy dimensionality reduction.
+
+  - category: attention_modules
+    title: Attention Is All You Need
+    year: 2017
+    tags: [paper, attention]
+    links:
+      paper: https://arxiv.org/abs/1706.03762
+    description: Transformer self-attention foundation for sequence modeling.
+
+  - category: attention_modules
+    title: Linformer
+    year: 2020
+    tags: [paper, attention, efficient]
+    links:
+      paper: https://arxiv.org/abs/2006.04768
+    description: Linear-complexity attention approximation for longer windows.
+
+  - category: attention_modules
+    title: Performer
+    year: 2020
+    tags: [paper, attention, efficient]
+    links:
+      paper: https://arxiv.org/abs/2009.14794
+    description: FAVOR+ linear attention with kernel feature maps.
+
+  - category: attention_modules
+    title: Informer
+    year: 2020
+    tags: [paper, attention, efficient]
+    links:
+      paper: https://arxiv.org/abs/2012.07436
+    description: ProbSparse attention for long time-series encoding.
+
+  - category: attention_modules
+    title: PatchTST
+    year: 2022
+    tags: [paper, attention]
+    links:
+      paper: https://arxiv.org/abs/2211.14730
+    description: Patching strategy for efficient transformer-style time-series representation.
+
+  - category: distillation
+    title: Distilling the Knowledge in a Neural Network
+    year: 2015
+    tags: [paper, distillation]
+    links:
+      paper: https://arxiv.org/abs/1503.02531
+    description: Foundational teacher-student distillation objective.
+
+  - category: distillation
+    title: FitNets
+    year: 2014
+    tags: [paper, distillation]
+    links:
+      paper: https://arxiv.org/abs/1412.6550
+    description: Hint-based intermediate feature matching.
+
+  - category: distillation
+    title: Paying More Attention to Attention
+    year: 2016
+    tags: [paper, distillation, attention]
+    links:
+      paper: https://arxiv.org/abs/1612.03928
+    description: Attention transfer losses for compact students.
+
+  - category: distillation
+    title: Born-Again Neural Networks
+    year: 2018
+    tags: [paper, distillation]
+    links:
+      paper: https://arxiv.org/abs/1805.04770
+    description: Self-distillation via sequential teacher-student training.
+
+  - category: distillation
+    title: DistilBERT
+    year: 2019
+    tags: [paper, distillation, efficient]
+    links:
+      paper: https://arxiv.org/abs/1910.01108
+    description: Practical distillation recipe for lighter transformer deployment.
+
+  - category: distillation
+    title: MobileBERT
+    year: 2020
+    tags: [paper, distillation, on-device]
+    links:
+      paper: https://arxiv.org/abs/2004.02984
+    description: Distilled and compressed transformer optimized for mobile.
+
+  - category: distillation
+    title: DeiT Distillation through Attention
+    year: 2020
+    tags: [paper, distillation, attention]
+    links:
+      paper: https://arxiv.org/abs/2012.12877
+    description: Distillation-token strategy transferable to sensor transformers.
+
+  - category: distillation
+    title: TinyBERT
+    year: 2019
+    tags: [paper, distillation, efficient]
+    links:
+      paper: https://arxiv.org/abs/1909.10351
+    description: Multi-stage transformer distillation with layer-wise constraints.
+
+  - category: distillation
+    title: KD-Lib
+    tags: [code, distillation, tooling]
+    links:
+      code: https://github.com/SforAiDl/KD_Lib
+    description: Open-source PyTorch distillation framework for rapid experiments.
+
+  - category: quantization_pruning_compression
+    title: Deep Compression
+    year: 2015
+    tags: [paper, pruning, quantization]
+    links:
+      paper: https://arxiv.org/abs/1510.00149
+    description: Classical prune-quantize-Huffman compression pipeline.
+
+  - category: quantization_pruning_compression
+    title: The Lottery Ticket Hypothesis
+    year: 2018
+    tags: [paper, pruning]
+    links:
+      paper: https://arxiv.org/abs/1803.03635
+    description: Sparse subnetworks for compact retraining.
+
+  - category: quantization_pruning_compression
+    title: Movement Pruning
+    year: 2020
+    tags: [paper, pruning]
+    links:
+      paper: https://arxiv.org/abs/2005.07683
+    description: Structured sparsification for transfer and compression.
+
+  - category: quantization_pruning_compression
+    title: TensorFlow Model Optimization Toolkit
+    tags: [tooling, quantization, pruning]
+    links:
+      docs: https://www.tensorflow.org/model_optimization
+    description: Pruning and quantization-aware training utilities.
+
+  - category: quantization_pruning_compression
+    title: TensorFlow Lite Post-Training Integer Quantization
+    tags: [tooling, quantization, on-device]
+    links:
+      docs: https://www.tensorflow.org/lite/performance/post_training_integer_quant
+    description: Full-int8 export path for edge inference.
+
+  - category: quantization_pruning_compression
+    title: PyTorch Quantization
+    tags: [tooling, quantization]
+    links:
+      docs: https://pytorch.org/docs/stable/quantization.html
+    description: Eager, FX, and PT2 quantization flows for production models.
+
+  - category: quantization_pruning_compression
+    title: ONNX Runtime Quantization
+    tags: [tooling, quantization]
+    links:
+      docs: https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html
+    description: Dynamic and static quantization for portable runtime stacks.
+
+  - category: quantization_pruning_compression
+    title: AIMET (AI Model Efficiency Toolkit)
+    tags: [code, tooling, quantization, pruning]
+    links:
+      code: https://github.com/quic/aimet
+    description: Compression toolkit with quantization and pruning recipes.
+
+  - category: quantization_pruning_compression
+    title: TensorRT
+    tags: [tooling, quantization, on-device]
+    links:
+      docs: https://docs.nvidia.com/deeplearning/tensorrt/
+    description: Deployment-oriented precision and kernel optimization.
+
+  - category: on_device_benchmarking_tooling
+    title: TensorFlow Lite Benchmark Tool
+    tags: [tooling, on-device, benchmark]
+    links:
+      docs: https://www.tensorflow.org/lite/performance/measurement
+    description: CLI profiling for latency and memory on target hardware.
+
+  - category: on_device_benchmarking_tooling
+    title: MLPerf Tiny
+    tags: [benchmark, on-device]
+    links:
+      benchmark: https://mlcommons.org/benchmarks/tiny/
+    description: Standardized tiny and edge benchmarking suite including HAR-relevant tasks.
+
+  - category: on_device_benchmarking_tooling
+    title: Android ADB
+    tags: [tooling, on-device]
+    links:
+      docs: https://developer.android.com/tools/adb
+    description: Essential deployment and repeatable benchmark automation entrypoint.
+
+  - category: on_device_benchmarking_tooling
+    title: Perfetto
+    tags: [tooling, on-device, benchmark]
+    links:
+      docs: https://perfetto.dev/
+    description: System-level tracing for CPU scheduling and thermal effects.
+
+  - category: on_device_benchmarking_tooling
+    title: Android Battery Historian
+    tags: [tooling, on-device]
+    links:
+      docs: https://developer.android.com/topic/performance/power/setup-battery-historian
+    description: Power usage inspection to support energy proxy reporting.
+
+  - category: on_device_benchmarking_tooling
+    title: PyTorch ExecuTorch
+    tags: [tooling, on-device]
+    links:
+      docs: https://pytorch.org/executorch/stable/
+    description: On-device inference runtime and tooling for edge deployment.
+
+  - category: on_device_benchmarking_tooling
+    title: TensorFlow Lite Model Analyzer
+    tags: [tooling, on-device]
+    links:
+      docs: https://www.tensorflow.org/lite/performance/model_analyzer
+    description: Inspect model memory and op-level deployment constraints.
+
+  - category: reproducible_benchmarks_leaderboards
+    title: Papers with Code - Human Activity Recognition
+    tags: [benchmark]
+    links:
+      leaderboard: https://paperswithcode.com/task/human-activity-recognition
+    description: Community benchmark tracking and reproducibility references.
+
+  - category: reproducible_benchmarks_leaderboards
+    title: UCR Time Series Classification Archive
+    tags: [dataset, benchmark]
+    links:
+      dataset: https://www.cs.ucr.edu/~eamonn/time_series_data_2018/
+    description: Standardized time-series benchmark collection for sanity checks.
+
+  - category: reproducible_benchmarks_leaderboards
+    title: Monash Time Series Forecasting Repository
+    tags: [dataset, benchmark]
+    links:
+      dataset: https://forecastingdata.org/
+    description: Protocol and split hygiene references transferable to sensor tasks.
+
+  - category: reproducible_benchmarks_leaderboards
+    title: sktime Benchmarking
+    tags: [code, tooling, benchmark]
+    links:
+      docs: https://www.sktime.net/en/stable/examples/benchmarking.html
+    description: Reproducible experiment tooling for time-series models.
+
+  - category: edge_har_starter_packs
+    title: "Starter pack: TFLite Android HAR baseline"
+    tags: [tooling, on-device]
+    links:
+      placeholder: templates/tflite-android-har/
+    description: Placeholder template path for a compact Android plus TFLite baseline app.
+    notes: check link
+
+  - category: edge_har_starter_packs
+    title: "Starter pack: Distillation-ready sensor training loop"
+    tags: [tooling, distillation]
+    links:
+      placeholder: templates/har-kd-pytorch/
+    description: Placeholder template path for teacher-student training experiments.
+    notes: check link
+
+  - category: edge_har_starter_packs
+    title: "Starter pack: Reproducible benchmark harness"
+    tags: [tooling, benchmark]
+    links:
+      placeholder: templates/har-benchmark-harness/
+    description: Placeholder template path for repeatable edge benchmark scripts.
+    notes: check link
