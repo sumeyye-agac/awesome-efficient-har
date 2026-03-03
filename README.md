@@ -1,5 +1,7 @@
 # awesome-efficient-har
 
+> This repository is under active development.
+
 A curated list of resources for **efficient, edge, and wearable Human Activity Recognition (HAR)**.
 
 Focus areas:

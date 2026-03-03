@@ -103,6 +103,8 @@ def render_readme(entries: list[dict]) -> str:
     lines: list[str] = []
     lines.append("# awesome-efficient-har")
     lines.append("")
+    lines.append("> This repository is under active development.")
+    lines.append("")
     lines.append("A curated list of resources for **efficient, edge, and wearable Human Activity Recognition (HAR)**.")
     lines.append("")
     lines.append("Focus areas:")
