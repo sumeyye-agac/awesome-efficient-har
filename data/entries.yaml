@@ -59,6 +59,7 @@ entries:
     links:
       dataset: http://www.sal.disco.unimib.it/technologies/unimib-shar/
     description: Smartphone accelerometer ADL and fall events.
+    notes: check link
 
   - category: datasets
     title: SisFall
@@ -67,6 +68,7 @@ entries:
     links:
       dataset: https://ieee-dataport.org/open-access/sisfall-and-fall-detection-datasets
     description: Fall detection focused wearable dataset with older-adult scenarios.
+    notes: check link
 
   - category: datasets
     title: Heterogeneity HAR (HHAR)
@@ -83,6 +85,7 @@ entries:
     links:
       code: https://github.com/mmalekzadeh/motionsense
     description: iPhone motion data for activity and user context tasks.
+    notes: check link
 
   - category: datasets
     title: SHL Dataset (Sussex-Huawei Locomotion)
@@ -432,6 +435,7 @@ entries:
     links:
       benchmark: https://mlcommons.org/benchmarks/tiny/
     description: Standardized tiny and edge benchmarking suite including HAR-relevant tasks.
+    notes: check link
 
   - category: on_device_benchmarking_tooling
     title: Android ADB
@@ -467,6 +471,7 @@ entries:
     links:
       docs: https://www.tensorflow.org/lite/performance/model_analyzer
     description: Inspect model memory and op-level deployment constraints.
+    notes: check link
 
   - category: reproducible_benchmarks_leaderboards
     title: Papers with Code - Human Activity Recognition
@@ -495,6 +500,7 @@ entries:
     links:
       docs: https://www.sktime.net/en/stable/examples/benchmarking.html
     description: Reproducible experiment tooling for time-series models.
+    notes: check link
 
   - category: edge_har_starter_packs
     title: "Starter pack: TFLite Android HAR baseline"

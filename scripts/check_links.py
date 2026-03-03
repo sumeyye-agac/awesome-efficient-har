@@ -26,18 +26,23 @@ def load_markdown_urls(path: Path) -> set[str]:
     return set(MARKDOWN_LINK_RE.findall(text))
 
 
-def load_yaml_urls(path: Path) -> set[str]:
+def load_yaml_urls(path: Path) -> tuple[set[str], set[str]]:
     payload = yaml.safe_load(path.read_text(encoding="utf-8"))
     entries = payload.get("entries", []) if isinstance(payload, dict) else []
     urls: set[str] = set()
+    skipped: set[str] = set()
     for entry in entries:
         links = entry.get("links", {}) if isinstance(entry, dict) else {}
+        notes = entry.get("notes", "") if isinstance(entry, dict) else ""
+        mark_skip = isinstance(notes, str) and "check link" in notes.lower()
         if not isinstance(links, dict):
             continue
         for value in links.values():
             if isinstance(value, str) and HTTP_RE.match(value):
                 urls.add(value)
-    return urls
+                if mark_skip:
+                    skipped.add(value)
+    return urls, skipped
 
 
 def check_url(url: str) -> tuple[bool, str]:
@@ -67,7 +72,9 @@ def check_url(url: str) -> tuple[bool, str]:
 def main() -> int:
     urls = set()
     urls |= load_markdown_urls(README_PATH)
-    urls |= load_yaml_urls(ENTRIES_PATH)
+    yaml_urls, skipped_urls = load_yaml_urls(ENTRIES_PATH)
+    urls |= yaml_urls
+    urls -= skipped_urls
 
     if not urls:
         print("No URLs found to check.")
@@ -75,6 +82,8 @@ def main() -> int:
 
     failures: list[tuple[str, str]] = []
     print(f"Checking {len(urls)} URLs...")
+    if skipped_urls:
+        print(f"Skipping {len(skipped_urls)} URL(s) marked with 'check link' in entries.yaml.")
     for url in sorted(urls):
         ok, detail = check_url(url)
         status_text = "OK" if ok else "FAIL"

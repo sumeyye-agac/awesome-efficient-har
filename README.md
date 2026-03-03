@@ -35,10 +35,10 @@ This README is generated from `data/entries.yaml` via `scripts/generate_readme.p
 - [mHealth](https://archive.ics.uci.edu/dataset/319/mhealth+dataset) - Body-worn sensor dataset for activity monitoring. `[📦 dataset]`
 - [RealWorld HAR](https://www.uni-mannheim.de/dws/research/projects/activity-recognition/) - Smartphone and smartwatch placement diversity in real-world conditions. `[📦 dataset]`
 - [USC-HAD](https://sipi.usc.edu/had/) (2012) - Wearable sensor activities with multiple subjects and repetitions. `[📦 dataset]`
-- [UniMiB SHAR](http://www.sal.disco.unimib.it/technologies/unimib-shar/) (2016) - Smartphone accelerometer ADL and fall events. `[📦 dataset]`
-- [SisFall](https://ieee-dataport.org/open-access/sisfall-and-fall-detection-datasets) (2017) - Fall detection focused wearable dataset with older-adult scenarios. `[📦 dataset]`
+- [UniMiB SHAR](http://www.sal.disco.unimib.it/technologies/unimib-shar/) (2016) - Smartphone accelerometer ADL and fall events. (check link) `[📦 dataset]`
+- [SisFall](https://ieee-dataport.org/open-access/sisfall-and-fall-detection-datasets) (2017) - Fall detection focused wearable dataset with older-adult scenarios. (check link) `[📦 dataset]`
 - [Heterogeneity HAR (HHAR)](https://archive.ics.uci.edu/dataset/344/heterogeneity+activity+recognition) (2015) - Device and user heterogeneity benchmark across phones and watches. `[📦 dataset] [🧪 benchmark]`
-- [MotionSense](https://github.com/mmalekzadeh/motionsense) (2019) - iPhone motion data for activity and user context tasks. `[📦 dataset] [💻 code]`
+- [MotionSense](https://github.com/mmalekzadeh/motionsense) (2019) - iPhone motion data for activity and user context tasks. (check link) `[📦 dataset] [💻 code]`
 - [SHL Dataset (Sussex-Huawei Locomotion)](http://www.shl-dataset.org/) - Large-scale multimodal wearable and phone locomotion challenge data. `[📦 dataset] [🧪 benchmark]`
 - [ExtraSensory](http://extrasensory.ucsd.edu/) (2016) - Smartphone, smartwatch, and context labels in the wild. `[📦 dataset]`
 - [DSADS (Daily and Sports Activities)](https://archive.ics.uci.edu/dataset/256/daily+and+sports+activities) - Body-worn motion sensors across daily and sport actions. `[📦 dataset]`
@@ -98,19 +98,19 @@ This README is generated from `data/entries.yaml` via `scripts/generate_readme.p
 ## 6) On-device benchmarking and tooling
 
 - [TensorFlow Lite Benchmark Tool](https://www.tensorflow.org/lite/performance/measurement) - CLI profiling for latency and memory on target hardware. `[🧰 tooling] [📱 on-device] [🧪 benchmark]`
-- [MLPerf Tiny](https://mlcommons.org/benchmarks/tiny/) - Standardized tiny and edge benchmarking suite including HAR-relevant tasks. `[🧪 benchmark] [📱 on-device]`
+- [MLPerf Tiny](https://mlcommons.org/benchmarks/tiny/) - Standardized tiny and edge benchmarking suite including HAR-relevant tasks. (check link) `[🧪 benchmark] [📱 on-device]`
 - [Android ADB](https://developer.android.com/tools/adb) - Essential deployment and repeatable benchmark automation entrypoint. `[🧰 tooling] [📱 on-device]`
 - [Perfetto](https://perfetto.dev/) - System-level tracing for CPU scheduling and thermal effects. `[🧰 tooling] [📱 on-device] [🧪 benchmark]`
 - [Android Battery Historian](https://developer.android.com/topic/performance/power/setup-battery-historian) - Power usage inspection to support energy proxy reporting. `[🧰 tooling] [📱 on-device]`
 - [PyTorch ExecuTorch](https://pytorch.org/executorch/stable/) - On-device inference runtime and tooling for edge deployment. `[🧰 tooling] [📱 on-device]`
-- [TensorFlow Lite Model Analyzer](https://www.tensorflow.org/lite/performance/model_analyzer) - Inspect model memory and op-level deployment constraints. `[🧰 tooling] [📱 on-device]`
+- [TensorFlow Lite Model Analyzer](https://www.tensorflow.org/lite/performance/model_analyzer) - Inspect model memory and op-level deployment constraints. (check link) `[🧰 tooling] [📱 on-device]`
 
 ## 7) Reproducible benchmarks/leaderboards
 
 - [Papers with Code - Human Activity Recognition](https://paperswithcode.com/task/human-activity-recognition) - Community benchmark tracking and reproducibility references. `[🧪 benchmark]`
 - [UCR Time Series Classification Archive](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/) - Standardized time-series benchmark collection for sanity checks. `[📦 dataset] [🧪 benchmark]`
 - [Monash Time Series Forecasting Repository](https://forecastingdata.org/) - Protocol and split hygiene references transferable to sensor tasks. `[📦 dataset] [🧪 benchmark]`
-- [sktime Benchmarking](https://www.sktime.net/en/stable/examples/benchmarking.html) - Reproducible experiment tooling for time-series models. `[💻 code] [🧰 tooling] [🧪 benchmark]`
+- [sktime Benchmarking](https://www.sktime.net/en/stable/examples/benchmarking.html) - Reproducible experiment tooling for time-series models. (check link) `[💻 code] [🧰 tooling] [🧪 benchmark]`
 
 ## 8) Deployment patterns (windowing/streaming/personalization)
 
