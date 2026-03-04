@@ -20,11 +20,5 @@ jobs:
       - name: Install Python deps
         run: pip install pyyaml
 
-      - name: Regenerate README and fail on diff
-        run: |
-          python scripts/generate_readme.py
-          if ! git diff --exit-code -- README.md; then
-            echo "README.md is not up to date with data/entries.yaml."
-            echo "Run: python scripts/generate_readme.py"
-            exit 1
-          fi
+      - name: Check generated README consistency
+        run: python scripts/check_generated_readme.py
