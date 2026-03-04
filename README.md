@@ -30,12 +30,14 @@ This README is generated from `data/entries.yaml` via `scripts/generate_readme.p
 
 ## 1) Datasets (wearable/IMU/multimodal)
 
-- [MotionSense](https://github.com/mmalekzadeh/motionsense) (2019) - iPhone motion data for activity and user context tasks. (check link) `[📦 dataset] [💻 code]`
+- [KU-HAR](https://www.sciencedirect.com/science/article/pii/S0167865521000933) (2020) - Open HAR dataset for heterogeneous smartphone sensing with 18 daily activities and standardized splits. `[📦 dataset] [🧪 benchmark]`
+- [MotionSense](https://github.com/mmalekzadeh/motion-sense) (2019) - iPhone motion data for activity and user context tasks. `[📦 dataset] [💻 code]`
 - [SHL Dataset (Sussex-Huawei Locomotion)](http://www.shl-dataset.org/) (2018) - Large-scale multimodal wearable and phone locomotion challenge data. `[📦 dataset] [🧪 benchmark]`
-- [SisFall](https://ieee-dataport.org/open-access/sisfall-and-fall-detection-datasets) (2017) - Fall detection focused wearable dataset with older-adult scenarios. (check link) `[📦 dataset]`
-- [ExtraSensory](http://extrasensory.ucsd.edu/) (2016) - Smartphone, smartwatch, and context labels in the wild. `[📦 dataset]`
+- [ExtraSensory](http://extrasensory.ucsd.edu/) (2017) - Smartphone, smartwatch, and context labels in the wild. `[📦 dataset]`
+- [SisFall](https://www.mdpi.com/1424-8220/17/1/198) (2017) - Fall and movement dataset with elderly participants, released with the SisFall benchmark paper. `[📦 dataset]`
+- [UniMiB SHAR](https://www.mdpi.com/2076-3417/7/10/1101) (2017) - Smartphone accelerometer ADL and fall dataset introduced with the UniMiB SHAR benchmark paper. `[📦 dataset]`
+- [MobiAct](https://bmi.hmu.gr/the-mobifall-and-mobiact-datasets-2/) (2016) - Smartphone inertial dataset for daily activities and falls from the MobiAct benchmark collection. `[📦 dataset]`
 - [RealWorld HAR](https://www.uni-mannheim.de/dws/research/projects/activity-recognition/) (2016) - Smartphone and smartwatch placement diversity in real-world conditions. `[📦 dataset]`
-- [UniMiB SHAR](http://www.sal.disco.unimib.it/technologies/unimib-shar/) (2016) - Smartphone accelerometer ADL and fall events. (check link) `[📦 dataset]`
 - [Heterogeneity HAR (HHAR)](https://archive.ics.uci.edu/dataset/344/heterogeneity+activity+recognition) (2015) - Device and user heterogeneity benchmark across phones and watches. `[📦 dataset] [🧪 benchmark]`
 - [mHealth](https://archive.ics.uci.edu/dataset/319/mhealth+dataset) (2014) - Body-worn sensor dataset for activity monitoring. `[📦 dataset]`
 - [DSADS (Daily and Sports Activities)](https://archive.ics.uci.edu/dataset/256/daily+and+sports+activities) (2013) - Body-worn motion sensors across daily and sport actions. `[📦 dataset]`
@@ -47,8 +49,10 @@ This README is generated from `data/entries.yaml` via `scripts/generate_readme.p
 
 ## 2) Lightweight architectures for time-series
 
+- [Hydra](https://arxiv.org/abs/2203.13652) (2022) - Competing convolutional kernels for fast and accurate time-series classification in low-latency settings. `[📄 paper] [⚡ efficient] [🧪 benchmark]`
+- [MultiROCKET](https://arxiv.org/abs/2102.00457) (2021) - Extends ROCKET with multiple pooling operators and transformations for faster, accurate time-series classification. `[📄 paper] [⚡ efficient] [🧪 benchmark] [💻 code]`
+- [Benchmarking TinyML Systems: Challenges and Direction](https://arxiv.org/abs/2003.04821) (2020) - Surveys TinyML benchmarking challenges, including hardware variability, metrics, and reproducibility constraints for edge deployments. `[📄 paper] [⚡ efficient] [📱 on-device] [🧪 benchmark]`
 - [MiniROCKET](https://arxiv.org/abs/2012.08791) (2020) - Faster deterministic ROCKET variant with strong speed-accuracy tradeoff. `[📄 paper] [⚡ efficient] [🧪 benchmark]`
-- [TinyML Model Optimization Techniques for Embedded AI](https://arxiv.org/abs/2003.04821) (2020) - Compact-model perspective for MCU and edge deployments. `[📄 paper] [⚡ efficient] [📱 on-device]`
 - [EfficientNet](https://arxiv.org/abs/1905.11946) (2019) - Compound scaling principles adaptable to time-series CNNs. `[📄 paper] [⚡ efficient]`
 - [InceptionTime](https://arxiv.org/abs/1909.04939) (2019) - Competitive time-series architecture often used as HAR baseline. `[📄 paper] [🧪 benchmark]`
 - [MobileNetV3](https://arxiv.org/abs/1905.02244) (2019) - Hardware-aware search and lightweight attention for edge latency. `[📄 paper] [⚡ efficient] [📱 on-device]`
@@ -99,17 +103,22 @@ This README is generated from `data/entries.yaml` via `scripts/generate_readme.p
 
 ## 6) On-device benchmarking and tooling
 
+- [LiteRT for Microcontrollers](https://ai.google.dev/edge/litert/microcontrollers/overview) (2024) - Official LiteRT microcontroller runtime guide for deploying tiny models on embedded targets. `[🧰 tooling] [📱 on-device]`
 - [PyTorch ExecuTorch](https://pytorch.org/executorch/stable/) (2023) - On-device inference runtime and tooling for edge deployment. `[🧰 tooling] [📱 on-device]`
-- [MLPerf Tiny](https://mlcommons.org/benchmarks/tiny/) (2021) - Standardized tiny and edge benchmarking suite including HAR-relevant tasks. (check link) `[🧪 benchmark] [📱 on-device]`
-- [TensorFlow Lite Model Analyzer](https://www.tensorflow.org/lite/performance/model_analyzer) (2021) - Inspect model memory and op-level deployment constraints. (check link) `[🧰 tooling] [📱 on-device]`
+- [Edge Impulse Deployment](https://docs.edgeimpulse.com/studio/projects/deployment) (2021) - Deployment guides for exporting and running edge ML models across embedded and mobile runtimes. `[🧰 tooling] [📱 on-device]`
+- [MLPerf Tiny](https://github.com/mlcommons/tiny) (2021) - Standardized tiny and edge benchmarking suite including HAR-relevant tasks. `[🧪 benchmark] [📱 on-device]`
+- [TensorFlow Lite Model Analyzer](https://ai.google.dev/edge/api/tflite/python/tf/lite/experimental/Analyzer) (2021) - Inspect model memory and op-level deployment constraints. `[🧰 tooling] [📱 on-device]`
 - [TensorFlow Lite Benchmark Tool](https://www.tensorflow.org/lite/performance/measurement) (2019) - CLI profiling for latency and memory on target hardware. `[🧰 tooling] [📱 on-device] [🧪 benchmark]`
+- [TensorFlow Lite for Microcontrollers (tflite-micro)](https://github.com/tensorflow/tflite-micro) (2019) - Reference embedded inference runtime and kernels for tiny on-device ML deployments. `[🧰 tooling] [📱 on-device] [💻 code]`
+- [Apache TVM](https://tvm.apache.org/docs/) (2018) - End-to-end model compilation stack with microTVM support for constrained edge targets. `[🧰 tooling] [📱 on-device]`
+- [CMSIS-NN](https://github.com/ARM-software/CMSIS-NN) (2018) - Optimized neural network kernels for Arm Cortex-M CPUs to accelerate edge inference. `[🧰 tooling] [📱 on-device] [💻 code] [⚡ efficient]`
 - [Perfetto](https://perfetto.dev/) (2018) - System-level tracing for CPU scheduling and thermal effects. `[🧰 tooling] [📱 on-device] [🧪 benchmark]`
 - [Android Battery Historian](https://developer.android.com/topic/performance/power/setup-battery-historian) (2015) - Power usage inspection to support energy proxy reporting. `[🧰 tooling] [📱 on-device]`
 - [Android ADB](https://developer.android.com/tools/adb) (2008) - Essential deployment and repeatable benchmark automation entrypoint. `[🧰 tooling] [📱 on-device]`
 
 ## 7) Reproducible benchmarks/leaderboards
 
-- [sktime Benchmarking](https://www.sktime.net/en/stable/examples/benchmarking.html) (2022) - Reproducible experiment tooling for time-series models. (check link) `[💻 code] [🧰 tooling] [🧪 benchmark]`
+- [sktime Benchmarking](https://www.sktime.net/en/stable/api_reference/benchmarking.html) (2022) - Reproducible experiment tooling for time-series models. `[💻 code] [🧰 tooling] [🧪 benchmark]`
 - [Monash Time Series Forecasting Repository](https://forecastingdata.org/) (2021) - Protocol and split hygiene references transferable to sensor tasks. `[📦 dataset] [🧪 benchmark]`
 - [Papers with Code - Human Activity Recognition](https://paperswithcode.com/task/human-activity-recognition) (2019) - Community benchmark tracking and reproducibility references. `[🧪 benchmark]`
 - [UCR Time Series Classification Archive](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/) (2018) - Standardized time-series benchmark collection for sanity checks. `[📦 dataset] [🧪 benchmark]`
@@ -139,9 +148,9 @@ Common pitfalls to document and avoid:
 
 ## Edge HAR starter packs
 
-- `Starter pack: Distillation-ready sensor training loop` (templates/har-kd-pytorch/) (2026) - Placeholder template path for teacher-student training experiments. (check link) `[🧰 tooling] [🧠 distillation]`
-- `Starter pack: Reproducible benchmark harness` (templates/har-benchmark-harness/) (2026) - Placeholder template path for repeatable edge benchmark scripts. (check link) `[🧰 tooling] [🧪 benchmark]`
-- `Starter pack: TFLite Android HAR baseline` (templates/tflite-android-har/) (2026) - Placeholder template path for a compact Android plus TFLite baseline app. (check link) `[🧰 tooling] [📱 on-device]`
+- `Starter pack: Distillation-ready sensor training loop` (recipes/knowledge_distillation.md) (2026) - Recipe-backed starter path for teacher-student training experiments. `[🧰 tooling] [🧠 distillation]`
+- `Starter pack: Reproducible benchmark harness` (recipes/android_latency_benchmark.md) (2026) - Recipe-backed starter path for repeatable Android edge benchmark runs. `[🧰 tooling] [🧪 benchmark]`
+- `Starter pack: TFLite Android HAR baseline` (recipes/tflite_int8_export.md) (2026) - Recipe-backed starter path for TFLite int8 export and mobile deployment setup. `[🧰 tooling] [📱 on-device]`
 
 ## Related recipes
 

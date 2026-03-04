@@ -1,14 +1,24 @@
 entries:
 - category: datasets
+  title: KU-HAR
+  year: 2020
+  tags:
+  - dataset
+  - benchmark
+  links:
+    dataset: https://data.mendeley.com/datasets/45f952y38r/1
+    paper: https://www.sciencedirect.com/science/article/pii/S0167865521000933
+  description: Open HAR dataset for heterogeneous smartphone sensing with 18 daily
+    activities and standardized splits.
+- category: datasets
   title: MotionSense
   year: 2019
   tags:
   - dataset
   - code
   links:
-    code: https://github.com/mmalekzadeh/motionsense
+    code: https://github.com/mmalekzadeh/motion-sense
   description: iPhone motion data for activity and user context tasks.
-  notes: check link
 - category: datasets
   title: SHL Dataset (Sussex-Huawei Locomotion)
   tags:
@@ -19,22 +29,40 @@ entries:
   description: Large-scale multimodal wearable and phone locomotion challenge data.
   year: 2018
 - category: datasets
-  title: SisFall
-  year: 2017
-  tags:
-  - dataset
-  links:
-    dataset: https://ieee-dataport.org/open-access/sisfall-and-fall-detection-datasets
-  description: Fall detection focused wearable dataset with older-adult scenarios.
-  notes: check link
-- category: datasets
   title: ExtraSensory
-  year: 2016
+  year: 2017
   tags:
   - dataset
   links:
     dataset: http://extrasensory.ucsd.edu/
   description: Smartphone, smartwatch, and context labels in the wild.
+- category: datasets
+  title: SisFall
+  year: 2017
+  tags:
+  - dataset
+  links:
+    paper: https://www.mdpi.com/1424-8220/17/1/198
+  description: Fall and movement dataset with elderly participants, released with
+    the SisFall benchmark paper.
+- category: datasets
+  title: UniMiB SHAR
+  year: 2017
+  tags:
+  - dataset
+  links:
+    paper: https://www.mdpi.com/2076-3417/7/10/1101
+  description: Smartphone accelerometer ADL and fall dataset introduced with the UniMiB
+    SHAR benchmark paper.
+- category: datasets
+  title: MobiAct
+  year: 2016
+  tags:
+  - dataset
+  links:
+    dataset: https://bmi.hmu.gr/the-mobifall-and-mobiact-datasets-2/
+  description: Smartphone inertial dataset for daily activities and falls from the
+    MobiAct benchmark collection.
 - category: datasets
   title: RealWorld HAR
   tags:
@@ -43,15 +71,6 @@ entries:
     dataset: https://www.uni-mannheim.de/dws/research/projects/activity-recognition/
   description: Smartphone and smartwatch placement diversity in real-world conditions.
   year: 2016
-- category: datasets
-  title: UniMiB SHAR
-  year: 2016
-  tags:
-  - dataset
-  links:
-    dataset: http://www.sal.disco.unimib.it/technologies/unimib-shar/
-  description: Smartphone accelerometer ADL and fall events.
-  notes: check link
 - category: datasets
   title: Heterogeneity HAR (HHAR)
   year: 2015
@@ -121,6 +140,43 @@ entries:
   description: Phone/watch accelerometer HAR data with classic activity labels.
   year: 2011
 - category: lightweight_architectures
+  title: Hydra
+  year: 2022
+  tags:
+  - paper
+  - efficient
+  - benchmark
+  links:
+    paper: https://arxiv.org/abs/2203.13652
+    code: https://github.com/angus924/hydra
+  description: Competing convolutional kernels for fast and accurate time-series classification
+    in low-latency settings.
+- category: lightweight_architectures
+  title: MultiROCKET
+  year: 2021
+  tags:
+  - paper
+  - efficient
+  - benchmark
+  - code
+  links:
+    paper: https://arxiv.org/abs/2102.00457
+    code: https://github.com/ChangWeiTan/MultiRocket
+  description: Extends ROCKET with multiple pooling operators and transformations
+    for faster, accurate time-series classification.
+- category: lightweight_architectures
+  title: 'Benchmarking TinyML Systems: Challenges and Direction'
+  year: 2020
+  tags:
+  - paper
+  - efficient
+  - on-device
+  - benchmark
+  links:
+    paper: https://arxiv.org/abs/2003.04821
+  description: Surveys TinyML benchmarking challenges, including hardware variability,
+    metrics, and reproducibility constraints for edge deployments.
+- category: lightweight_architectures
   title: MiniROCKET
   year: 2020
   tags:
@@ -130,16 +186,6 @@ entries:
   links:
     paper: https://arxiv.org/abs/2012.08791
   description: Faster deterministic ROCKET variant with strong speed-accuracy tradeoff.
-- category: lightweight_architectures
-  title: TinyML Model Optimization Techniques for Embedded AI
-  year: 2020
-  tags:
-  - paper
-  - efficient
-  - on-device
-  links:
-    paper: https://arxiv.org/abs/2003.04821
-  description: Compact-model perspective for MCU and edge deployments.
 - category: lightweight_architectures
   title: EfficientNet
   year: 2019
@@ -505,6 +551,16 @@ entries:
   description: Deployment-oriented precision and kernel optimization.
   year: 2014
 - category: on_device_benchmarking_tooling
+  title: LiteRT for Microcontrollers
+  year: 2024
+  tags:
+  - tooling
+  - on-device
+  links:
+    docs: https://ai.google.dev/edge/litert/microcontrollers/overview
+  description: Official LiteRT microcontroller runtime guide for deploying tiny models
+    on embedded targets.
+- category: on_device_benchmarking_tooling
   title: PyTorch ExecuTorch
   tags:
   - tooling
@@ -514,15 +570,24 @@ entries:
   description: On-device inference runtime and tooling for edge deployment.
   year: 2023
 - category: on_device_benchmarking_tooling
+  title: Edge Impulse Deployment
+  year: 2021
+  tags:
+  - tooling
+  - on-device
+  links:
+    docs: https://docs.edgeimpulse.com/studio/projects/deployment
+  description: Deployment guides for exporting and running edge ML models across embedded
+    and mobile runtimes.
+- category: on_device_benchmarking_tooling
   title: MLPerf Tiny
   tags:
   - benchmark
   - on-device
   links:
-    benchmark: https://mlcommons.org/benchmarks/tiny/
+    benchmark: https://github.com/mlcommons/tiny
   description: Standardized tiny and edge benchmarking suite including HAR-relevant
     tasks.
-  notes: check link
   year: 2021
 - category: on_device_benchmarking_tooling
   title: TensorFlow Lite Model Analyzer
@@ -530,9 +595,8 @@ entries:
   - tooling
   - on-device
   links:
-    docs: https://www.tensorflow.org/lite/performance/model_analyzer
+    docs: https://ai.google.dev/edge/api/tflite/python/tf/lite/experimental/Analyzer
   description: Inspect model memory and op-level deployment constraints.
-  notes: check link
   year: 2021
 - category: on_device_benchmarking_tooling
   title: TensorFlow Lite Benchmark Tool
@@ -544,6 +608,39 @@ entries:
     docs: https://www.tensorflow.org/lite/performance/measurement
   description: CLI profiling for latency and memory on target hardware.
   year: 2019
+- category: on_device_benchmarking_tooling
+  title: TensorFlow Lite for Microcontrollers (tflite-micro)
+  year: 2019
+  tags:
+  - tooling
+  - on-device
+  - code
+  links:
+    code: https://github.com/tensorflow/tflite-micro
+  description: Reference embedded inference runtime and kernels for tiny on-device
+    ML deployments.
+- category: on_device_benchmarking_tooling
+  title: Apache TVM
+  year: 2018
+  tags:
+  - tooling
+  - on-device
+  links:
+    docs: https://tvm.apache.org/docs/
+  description: End-to-end model compilation stack with microTVM support for constrained
+    edge targets.
+- category: on_device_benchmarking_tooling
+  title: CMSIS-NN
+  year: 2018
+  tags:
+  - tooling
+  - on-device
+  - code
+  - efficient
+  links:
+    code: https://github.com/ARM-software/CMSIS-NN
+  description: Optimized neural network kernels for Arm Cortex-M CPUs to accelerate
+    edge inference.
 - category: on_device_benchmarking_tooling
   title: Perfetto
   tags:
@@ -579,9 +676,8 @@ entries:
   - tooling
   - benchmark
   links:
-    docs: https://www.sktime.net/en/stable/examples/benchmarking.html
+    docs: https://www.sktime.net/en/stable/api_reference/benchmarking.html
   description: Reproducible experiment tooling for time-series models.
-  notes: check link
   year: 2022
 - category: reproducible_benchmarks_leaderboards
   title: Monash Time Series Forecasting Repository
@@ -615,9 +711,8 @@ entries:
   - tooling
   - distillation
   links:
-    placeholder: templates/har-kd-pytorch/
-  description: Placeholder template path for teacher-student training experiments.
-  notes: check link
+    placeholder: recipes/knowledge_distillation.md
+  description: Recipe-backed starter path for teacher-student training experiments.
   year: 2026
 - category: edge_har_starter_packs
   title: 'Starter pack: Reproducible benchmark harness'
@@ -625,9 +720,8 @@ entries:
   - tooling
   - benchmark
   links:
-    placeholder: templates/har-benchmark-harness/
-  description: Placeholder template path for repeatable edge benchmark scripts.
-  notes: check link
+    placeholder: recipes/android_latency_benchmark.md
+  description: Recipe-backed starter path for repeatable Android edge benchmark runs.
   year: 2026
 - category: edge_har_starter_packs
   title: 'Starter pack: TFLite Android HAR baseline'
@@ -635,8 +729,7 @@ entries:
   - tooling
   - on-device
   links:
-    placeholder: templates/tflite-android-har/
-  description: Placeholder template path for a compact Android plus TFLite baseline
-    app.
-  notes: check link
+    placeholder: recipes/tflite_int8_export.md
+  description: Recipe-backed starter path for TFLite int8 export and mobile deployment
+    setup.
   year: 2026
