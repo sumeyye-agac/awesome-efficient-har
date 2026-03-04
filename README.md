@@ -148,3 +148,7 @@ Common pitfalls to document and avoid:
 - [Knowledge distillation recipe](recipes/knowledge_distillation.md)
 - [TFLite int8 export recipe](recipes/tflite_int8_export.md)
 - [Android latency benchmark recipe](recipes/android_latency_benchmark.md)
+
+## License
+
+This repository is licensed under the [MIT License](LICENSE).
