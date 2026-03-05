@@ -1,37 +1,33 @@
-# awesome-efficient-har
+<!--lint disable awesome-github-->
+# Awesome Efficient HAR [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > This repository is under active development.
 
 A curated list of resources for **efficient, edge, and wearable Human Activity Recognition (HAR)**.
 
-Focus areas:
-- wearable and smartphone sensor data (IMU, multimodal)
-- compact models for time-series HAR
-- on-device deployment and reliable benchmarking
+Focus areas: wearable and smartphone sensor data (IMU, multimodal), compact models for time-series HAR, and on-device deployment with reliable benchmarking.
+
+Legend: `[📄 paper]` `[💻 code]` `[📦 dataset]` `[⚡ efficient]` `[📱 on-device]` `[🧪 benchmark]` `[🧠 distillation]` `[🧩 attention]` `[🔧 quantization]` `[🪓 pruning]` `[🧰 tooling]`
 
 This README is generated from `data/entries.yaml` via `scripts/generate_readme.py`.
 
-## Legend
-
-`[📄 paper]` `[💻 code]` `[📦 dataset]` `[⚡ efficient]` `[📱 on-device]` `[🧪 benchmark]` `[🧠 distillation]` `[🧩 attention]` `[🔧 quantization]` `[🪓 pruning]` `[🧰 tooling]`
-
 ## Contents
 
-1. [Datasets (wearable/IMU/multimodal)](#1-datasets-wearableimumultimodal)
-2. [Lightweight architectures for time-series](#2-lightweight-architectures-for-time-series)
-3. [Attention modules for sensor/time-series](#3-attention-modules-for-sensortime-series)
-4. [Knowledge distillation for HAR/time-series](#4-knowledge-distillation-for-hartime-series)
-5. [Quantization/pruning/compression](#5-quantizationpruningcompression)
-6. [On-device benchmarking and tooling](#6-on-device-benchmarking-and-tooling)
-7. [Reproducible benchmarks/leaderboards](#7-reproducible-benchmarksleaderboards)
-8. [Deployment patterns (windowing/streaming/personalization)](#8-deployment-patterns-windowingstreamingpersonalization)
+1. [Datasets (wearable/IMU/multimodal)](#datasets-wearableimumultimodal)
+2. [Lightweight architectures for time-series](#lightweight-architectures-for-time-series)
+3. [Attention modules for sensor/time-series](#attention-modules-for-sensortime-series)
+4. [Knowledge distillation for HAR/time-series](#knowledge-distillation-for-hartime-series)
+5. [Quantization/pruning/compression](#quantizationpruningcompression)
+6. [On-device benchmarking and tooling](#on-device-benchmarking-and-tooling)
+7. [Reproducible benchmarks/leaderboards](#reproducible-benchmarksleaderboards)
+8. [Deployment patterns (windowing/streaming/personalization)](#deployment-patterns-windowingstreamingpersonalization)
 9. [Efficiency reporting checklist for HAR papers](#efficiency-reporting-checklist-for-har-papers)
 10. [Edge HAR starter packs](#edge-har-starter-packs)
 
-## 1) Datasets (wearable/IMU/multimodal)
+## Datasets (wearable/IMU/multimodal)
 
 - [KU-HAR](https://www.sciencedirect.com/science/article/pii/S0167865521000933) (2020) - Open HAR dataset for heterogeneous smartphone sensing with 18 daily activities and standardized splits. `[📦 dataset] [🧪 benchmark]`
-- [MotionSense](https://github.com/mmalekzadeh/motion-sense) (2019) - iPhone motion data for activity and user context tasks. `[📦 dataset] [💻 code]`
+- [MotionSense](https://github.com/mmalekzadeh/motion-sense) (2019) - Motion data from iPhone sensors for activity and user context tasks. `[📦 dataset] [💻 code]`
 - [SHL Dataset (Sussex-Huawei Locomotion)](http://www.shl-dataset.org/) (2018) - Large-scale multimodal wearable and phone locomotion challenge data. `[📦 dataset] [🧪 benchmark]`
 - [ExtraSensory](http://extrasensory.ucsd.edu/) (2017) - Smartphone, smartwatch, and context labels in the wild. `[📦 dataset]`
 - [SisFall](https://www.mdpi.com/1424-8220/17/1/198) (2017) - Fall and movement dataset with elderly participants, released with the SisFall benchmark paper. `[📦 dataset]`
@@ -47,7 +43,7 @@ This README is generated from `data/entries.yaml` via `scripts/generate_readme.p
 - [USC-HAD](https://sipi.usc.edu/had/) (2012) - Wearable sensor activities with multiple subjects and repetitions. `[📦 dataset]`
 - [WISDM](https://www.cis.fordham.edu/wisdm/dataset.php) (2011) - Phone/watch accelerometer HAR data with classic activity labels. `[📦 dataset]`
 
-## 2) Lightweight architectures for time-series
+## Lightweight architectures for time-series
 
 - [Hydra](https://arxiv.org/abs/2203.13652) (2022) - Competing convolutional kernels for fast and accurate time-series classification in low-latency settings. `[📄 paper] [⚡ efficient] [🧪 benchmark]`
 - [MultiROCKET](https://arxiv.org/abs/2102.00457) (2021) - Extends ROCKET with multiple pooling operators and transformations for faster, accurate time-series classification. `[📄 paper] [⚡ efficient] [🧪 benchmark] [💻 code]`
@@ -66,7 +62,7 @@ This README is generated from `data/entries.yaml` via `scripts/generate_readme.p
 - [DeepConvLSTM for HAR](https://www.mdpi.com/1424-8220/16/1/115) (2016) - Early strong wearable HAR model combining temporal conv and recurrence. `[📄 paper] [🧪 benchmark]`
 - [SqueezeNet](https://arxiv.org/abs/1602.07360) (2016) - Fire modules for very small parameter footprint. `[📄 paper] [⚡ efficient]`
 
-## 3) Attention modules for sensor/time-series
+## Attention modules for sensor/time-series
 
 - [PatchTST](https://arxiv.org/abs/2211.14730) (2022) - Patching strategy for efficient transformer-style time-series representation. `[📄 paper] [🧩 attention]`
 - [Informer](https://arxiv.org/abs/2012.07436) (2020) - ProbSparse attention for long time-series encoding. `[📄 paper] [🧩 attention] [⚡ efficient]`
@@ -77,7 +73,7 @@ This README is generated from `data/entries.yaml` via `scripts/generate_readme.p
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762) (2017) - Transformer self-attention foundation for sequence modeling. `[📄 paper] [🧩 attention]`
 - [Squeeze-and-Excitation Networks](https://arxiv.org/abs/1709.01507) (2017) - Channel reweighting block often adapted to 1D sensor CNNs. `[📄 paper] [🧩 attention] [⚡ efficient]`
 
-## 4) Knowledge distillation for HAR/time-series
+## Knowledge distillation for HAR/time-series
 
 - [DeiT Distillation through Attention](https://arxiv.org/abs/2012.12877) (2020) - Distillation-token strategy transferable to sensor transformers. `[📄 paper] [🧠 distillation] [🧩 attention]`
 - [KD-Lib](https://github.com/SforAiDl/KD_Lib) (2020) - Open-source PyTorch distillation framework for rapid experiments. `[💻 code] [🧠 distillation] [🧰 tooling]`
@@ -89,7 +85,7 @@ This README is generated from `data/entries.yaml` via `scripts/generate_readme.p
 - [Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531) (2015) - Foundational teacher-student distillation objective. `[📄 paper] [🧠 distillation]`
 - [FitNets](https://arxiv.org/abs/1412.6550) (2014) - Hint-based intermediate feature matching. `[📄 paper] [🧠 distillation]`
 
-## 5) Quantization/pruning/compression
+## Quantization/pruning/compression
 
 - [AIMET (AI Model Efficiency Toolkit)](https://github.com/quic/aimet) (2021) - Compression toolkit with quantization and pruning recipes. `[💻 code] [🧰 tooling] [🔧 quantization] [🪓 pruning]`
 - [Movement Pruning](https://arxiv.org/abs/2005.07683) (2020) - Structured sparsification for transfer and compression. `[📄 paper] [🪓 pruning]`
@@ -101,7 +97,7 @@ This README is generated from `data/entries.yaml` via `scripts/generate_readme.p
 - [Deep Compression](https://arxiv.org/abs/1510.00149) (2015) - Classical prune-quantize-Huffman compression pipeline. `[📄 paper] [🪓 pruning] [🔧 quantization]`
 - [TensorRT](https://docs.nvidia.com/deeplearning/tensorrt/) (2014) - Deployment-oriented precision and kernel optimization. `[🧰 tooling] [🔧 quantization] [📱 on-device]`
 
-## 6) On-device benchmarking and tooling
+## On-device benchmarking and tooling
 
 - [LiteRT for Microcontrollers](https://ai.google.dev/edge/litert/microcontrollers/overview) (2024) - Official LiteRT microcontroller runtime guide for deploying tiny models on embedded targets. `[🧰 tooling] [📱 on-device]`
 - [PyTorch ExecuTorch](https://pytorch.org/executorch/stable/) (2023) - On-device inference runtime and tooling for edge deployment. `[🧰 tooling] [📱 on-device]`
@@ -116,48 +112,32 @@ This README is generated from `data/entries.yaml` via `scripts/generate_readme.p
 - [Android Battery Historian](https://developer.android.com/topic/performance/power/setup-battery-historian) (2015) - Power usage inspection to support energy proxy reporting. `[🧰 tooling] [📱 on-device]`
 - [Android ADB](https://developer.android.com/tools/adb) (2008) - Essential deployment and repeatable benchmark automation entrypoint. `[🧰 tooling] [📱 on-device]`
 
-## 7) Reproducible benchmarks/leaderboards
+## Reproducible benchmarks/leaderboards
 
 - [sktime Benchmarking](https://www.sktime.net/en/stable/api_reference/benchmarking.html) (2022) - Reproducible experiment tooling for time-series models. `[💻 code] [🧰 tooling] [🧪 benchmark]`
 - [Monash Time Series Forecasting Repository](https://forecastingdata.org/) (2021) - Protocol and split hygiene references transferable to sensor tasks. `[📦 dataset] [🧪 benchmark]`
 - [Papers with Code - Human Activity Recognition](https://paperswithcode.com/task/human-activity-recognition) (2019) - Community benchmark tracking and reproducibility references. `[🧪 benchmark]`
 - [UCR Time Series Classification Archive](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/) (2018) - Standardized time-series benchmark collection for sanity checks. `[📦 dataset] [🧪 benchmark]`
 
-## 8) Deployment patterns (windowing/streaming/personalization)
+## Deployment patterns (windowing/streaming/personalization)
 
-- **Windowing policy**: Report window length, stride, overlap, and label-assignment rule; avoid hidden overlap leakage between train and test.
-- **Streaming inference**: Prefer causal feature extraction and stateful models for low-latency online HAR.
-- **Subject split discipline**: Always separate users across train/val/test when claiming generalization.
-- **Personalization track**: Report both cold-start (no user fine-tune) and adaptation (few-shot or calibration) metrics.
-- **Fallback behavior**: Define unknown/transition states and confidence thresholds for real-world deployment.
-- **Battery-accuracy tradeoff**: Jointly report duty cycle, sampling rate, and latency.
+Windowing policy: report window length, stride, overlap, and label-assignment rule; avoid hidden overlap leakage between train and test.
+Streaming inference: prefer causal feature extraction and stateful models for low-latency online HAR.
+Subject split discipline: always separate users across train/val/test when claiming generalization.
+Personalization track: report both cold-start (no user fine-tune) and adaptation (few-shot or calibration) metrics.
+Fallback behavior: define unknown and transition states plus confidence thresholds for real-world deployment.
+Battery-accuracy tradeoff: jointly report duty cycle, sampling rate, and latency.
 
 ## Efficiency reporting checklist for HAR papers
 
-Report these metrics together:
-- Parameter count
-- MACs/FLOPs (for stated input window)
-- End-to-end latency on target hardware
-- Peak memory (RAM and model size)
-- Energy proxy (power draw, battery drain rate, or joules/inference)
+Report these metrics together: parameter count, MACs/FLOPs for the stated input window, end-to-end latency on target hardware, peak memory (RAM and model size), and an energy proxy (power draw, battery drain rate, or joules per inference).
 
-Common pitfalls to document and avoid:
-- Window leakage from overlap across data splits
-- Subject split mistakes (random split instead of subject-wise split)
-- Personalization evaluation without clear adaptation budget or protocol
+Common pitfalls to document and avoid: window leakage from overlap across data splits, subject split mistakes from random splitting instead of subject-wise splitting, and personalization evaluation without a clear adaptation budget or protocol.
 
 ## Edge HAR starter packs
 
-- `Starter pack: Distillation-ready sensor training loop` (recipes/knowledge_distillation.md) (2026) - Recipe-backed starter path for teacher-student training experiments. `[🧰 tooling] [🧠 distillation]`
-- `Starter pack: Reproducible benchmark harness` (recipes/android_latency_benchmark.md) (2026) - Recipe-backed starter path for repeatable Android edge benchmark runs. `[🧰 tooling] [🧪 benchmark]`
-- `Starter pack: TFLite Android HAR baseline` (recipes/tflite_int8_export.md) (2026) - Recipe-backed starter path for TFLite int8 export and mobile deployment setup. `[🧰 tooling] [📱 on-device]`
+- [Starter pack: Distillation-ready sensor training loop](https://github.com/sumeyye-agac/awesome-efficient-har/blob/main/recipes/knowledge_distillation.md) (2026) - Recipe-backed starter path for teacher-student training experiments. `[🧰 tooling] [🧠 distillation]`
+- [Starter pack: Reproducible benchmark harness](https://github.com/sumeyye-agac/awesome-efficient-har/blob/main/recipes/android_latency_benchmark.md) (2026) - Recipe-backed starter path for repeatable Android edge benchmark runs. `[🧰 tooling] [🧪 benchmark]`
+- [Starter pack: TFLite Android HAR baseline](https://github.com/sumeyye-agac/awesome-efficient-har/blob/main/recipes/tflite_int8_export.md) (2026) - Recipe-backed starter path for TFLite int8 export and mobile deployment setup. `[🧰 tooling] [📱 on-device]`
 
-## Related recipes
-
-- [Knowledge distillation recipe](recipes/knowledge_distillation.md)
-- [TFLite int8 export recipe](recipes/tflite_int8_export.md)
-- [Android latency benchmark recipe](recipes/android_latency_benchmark.md)
-
-## License
-
-This repository is licensed under the [MIT License](LICENSE).
+MIT license. See https://github.com/sumeyye-agac/awesome-efficient-har/blob/main/LICENSE.

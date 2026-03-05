@@ -18,7 +18,7 @@ entries:
   - code
   links:
     code: https://github.com/mmalekzadeh/motion-sense
-  description: iPhone motion data for activity and user context tasks.
+  description: Motion data from iPhone sensors for activity and user context tasks.
 - category: datasets
   title: SHL Dataset (Sussex-Huawei Locomotion)
   tags:
@@ -711,7 +711,7 @@ entries:
   - tooling
   - distillation
   links:
-    placeholder: recipes/knowledge_distillation.md
+    docs: https://github.com/sumeyye-agac/awesome-efficient-har/blob/main/recipes/knowledge_distillation.md
   description: Recipe-backed starter path for teacher-student training experiments.
   year: 2026
 - category: edge_har_starter_packs
@@ -720,7 +720,7 @@ entries:
   - tooling
   - benchmark
   links:
-    placeholder: recipes/android_latency_benchmark.md
+    docs: https://github.com/sumeyye-agac/awesome-efficient-har/blob/main/recipes/android_latency_benchmark.md
   description: Recipe-backed starter path for repeatable Android edge benchmark runs.
   year: 2026
 - category: edge_har_starter_packs
@@ -729,7 +729,7 @@ entries:
   - tooling
   - on-device
   links:
-    placeholder: recipes/tflite_int8_export.md
+    docs: https://github.com/sumeyye-agac/awesome-efficient-har/blob/main/recipes/tflite_int8_export.md
   description: Recipe-backed starter path for TFLite int8 export and mobile deployment
     setup.
   year: 2026
