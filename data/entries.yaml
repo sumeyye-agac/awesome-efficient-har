@@ -25,8 +25,9 @@ entries:
   - dataset
   - benchmark
   links:
-    dataset: http://www.shl-dataset.org/
-  description: Large-scale multimodal wearable and phone locomotion challenge data.
+    official: https://www.sussex.ac.uk/strc/research/wearable/locomotion-transportation
+  description: Large-scale smartphone and wearable locomotion benchmark with official
+    Sussex challenge resources.
   year: 2018
 - category: datasets
   title: ExtraSensory
@@ -34,8 +35,10 @@ entries:
   tags:
   - dataset
   links:
-    dataset: http://extrasensory.ucsd.edu/
-  description: Smartphone, smartwatch, and context labels in the wild.
+    official: https://www.kaggle.com/datasets/yvaizman/the-extrasensory-dataset
+    paper: https://users.ece.utexas.edu/~ethomaz/courses/papers/interactive-ar/extra-sensory.pdf
+  description: Multimodal in-the-wild behavior dataset with mobile and wearable sensors,
+    mirrored via Kaggle and paper resources.
 - category: datasets
   title: SisFall
   year: 2017
@@ -670,6 +673,15 @@ entries:
   description: Essential deployment and repeatable benchmark automation entrypoint.
   year: 2008
 - category: reproducible_benchmarks_leaderboards
+  title: Hugging Face Collection - Human Activity Recognition (HAR)
+  tags:
+  - benchmark
+  links:
+    leaderboard: https://huggingface.co/collections/CRUISEResearchGroup/human-activity-recognition-har
+  description: Curated HAR papers and models reference after Papers with Code task
+    pages became unavailable.
+  year: 2025
+- category: reproducible_benchmarks_leaderboards
   title: sktime Benchmarking
   tags:
   - code
@@ -688,14 +700,6 @@ entries:
     dataset: https://forecastingdata.org/
   description: Protocol and split hygiene references transferable to sensor tasks.
   year: 2021
-- category: reproducible_benchmarks_leaderboards
-  title: Papers with Code - Human Activity Recognition
-  tags:
-  - benchmark
-  links:
-    leaderboard: https://paperswithcode.com/task/human-activity-recognition
-  description: Community benchmark tracking and reproducibility references.
-  year: 2019
 - category: reproducible_benchmarks_leaderboards
   title: UCR Time Series Classification Archive
   tags:

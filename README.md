@@ -28,8 +28,8 @@ This README is generated from `data/entries.yaml` via `scripts/generate_readme.p
 
 - [KU-HAR](https://www.sciencedirect.com/science/article/pii/S0167865521000933) (2020) - Open HAR dataset for heterogeneous smartphone sensing with 18 daily activities and standardized splits. `[📦 dataset] [🧪 benchmark]`
 - [MotionSense](https://github.com/mmalekzadeh/motion-sense) (2019) - Motion data from iPhone sensors for activity and user context tasks. `[📦 dataset] [💻 code]`
-- [SHL Dataset (Sussex-Huawei Locomotion)](http://www.shl-dataset.org/) (2018) - Large-scale multimodal wearable and phone locomotion challenge data. `[📦 dataset] [🧪 benchmark]`
-- [ExtraSensory](http://extrasensory.ucsd.edu/) (2017) - Smartphone, smartwatch, and context labels in the wild. `[📦 dataset]`
+- [SHL Dataset (Sussex-Huawei Locomotion)](https://www.sussex.ac.uk/strc/research/wearable/locomotion-transportation) (2018) - Large-scale smartphone and wearable locomotion benchmark with official Sussex challenge resources. `[📦 dataset] [🧪 benchmark]`
+- [ExtraSensory](https://www.kaggle.com/datasets/yvaizman/the-extrasensory-dataset) (2017) - Multimodal in-the-wild behavior dataset with mobile and wearable sensors, mirrored via Kaggle and paper resources. `[📦 dataset]`
 - [SisFall](https://www.mdpi.com/1424-8220/17/1/198) (2017) - Fall and movement dataset with elderly participants, released with the SisFall benchmark paper. `[📦 dataset]`
 - [UniMiB SHAR](https://www.mdpi.com/2076-3417/7/10/1101) (2017) - Smartphone accelerometer ADL and fall dataset introduced with the UniMiB SHAR benchmark paper. `[📦 dataset]`
 - [MobiAct](https://bmi.hmu.gr/the-mobifall-and-mobiact-datasets-2/) (2016) - Smartphone inertial dataset for daily activities and falls from the MobiAct benchmark collection. `[📦 dataset]`
@@ -114,9 +114,9 @@ This README is generated from `data/entries.yaml` via `scripts/generate_readme.p
 
 ## Reproducible benchmarks/leaderboards
 
+- [Hugging Face Collection - Human Activity Recognition (HAR)](https://huggingface.co/collections/CRUISEResearchGroup/human-activity-recognition-har) (2025) - Curated HAR papers and models reference after Papers with Code task pages became unavailable. `[🧪 benchmark]`
 - [sktime Benchmarking](https://www.sktime.net/en/stable/api_reference/benchmarking.html) (2022) - Reproducible experiment tooling for time-series models. `[💻 code] [🧰 tooling] [🧪 benchmark]`
 - [Monash Time Series Forecasting Repository](https://forecastingdata.org/) (2021) - Protocol and split hygiene references transferable to sensor tasks. `[📦 dataset] [🧪 benchmark]`
-- [Papers with Code - Human Activity Recognition](https://paperswithcode.com/task/human-activity-recognition) (2019) - Community benchmark tracking and reproducibility references. `[🧪 benchmark]`
 - [UCR Time Series Classification Archive](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/) (2018) - Standardized time-series benchmark collection for sanity checks. `[📦 dataset] [🧪 benchmark]`
 
 ## Deployment patterns (windowing/streaming/personalization)
