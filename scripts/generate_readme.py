@@ -105,8 +105,6 @@ def render_readme(entries: list[dict]) -> str:
     lines.append("<!--lint disable awesome-github-->")
     lines.append("# Awesome Efficient HAR [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)")
     lines.append("")
-    lines.append("> Every entry is a verified primary source - deduplicated, link-checked in CI, and generated from a single `entries.yaml`. Built for choosing, building, and benchmarking efficient HAR models on wearables and edge devices.")
-    lines.append("")
     lines.append("A curated list of resources for **efficient, edge, and wearable Human Activity Recognition (HAR)**.")
     lines.append("")
     lines.append("Focus areas: wearable and smartphone sensor data (IMU, multimodal), compact models for time-series HAR, and on-device deployment with reliable benchmarking.")

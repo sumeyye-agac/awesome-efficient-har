@@ -1,8 +1,6 @@
 <!--lint disable awesome-github-->
 # Awesome Efficient HAR [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> Every entry is a verified primary source - deduplicated, link-checked in CI, and generated from a single `entries.yaml`. Built for choosing, building, and benchmarking efficient HAR models on wearables and edge devices.
-
 A curated list of resources for **efficient, edge, and wearable Human Activity Recognition (HAR)**.
 
 Focus areas: wearable and smartphone sensor data (IMU, multimodal), compact models for time-series HAR, and on-device deployment with reliable benchmarking.
