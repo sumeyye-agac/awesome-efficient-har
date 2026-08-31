@@ -1,7 +1,7 @@
 <!--lint disable awesome-github-->
 # Awesome Efficient HAR [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> This repository is under active development.
+> Every entry is a verified primary source - deduplicated, link-checked in CI, and generated from a single `entries.yaml`. Built for choosing, building, and benchmarking efficient HAR models on wearables and edge devices.
 
 A curated list of resources for **efficient, edge, and wearable Human Activity Recognition (HAR)**.
 
@@ -16,16 +16,18 @@ This README is generated from `data/entries.yaml` via `scripts/generate_readme.p
 1. [Datasets (wearable/IMU/multimodal)](#datasets-wearableimumultimodal)
 2. [Lightweight architectures for time-series](#lightweight-architectures-for-time-series)
 3. [Attention modules for sensor/time-series](#attention-modules-for-sensortime-series)
-4. [Knowledge distillation for HAR/time-series](#knowledge-distillation-for-hartime-series)
-5. [Quantization/pruning/compression](#quantizationpruningcompression)
-6. [On-device benchmarking and tooling](#on-device-benchmarking-and-tooling)
-7. [Reproducible benchmarks/leaderboards](#reproducible-benchmarksleaderboards)
-8. [Deployment patterns (windowing/streaming/personalization)](#deployment-patterns-windowingstreamingpersonalization)
-9. [Efficiency reporting checklist for HAR papers](#efficiency-reporting-checklist-for-har-papers)
-10. [Edge HAR starter packs](#edge-har-starter-packs)
+4. [Self-supervised and foundation models for HAR](#self-supervised-and-foundation-models-for-har)
+5. [Knowledge distillation for HAR/time-series](#knowledge-distillation-for-hartime-series)
+6. [Quantization/pruning/compression](#quantizationpruningcompression)
+7. [On-device benchmarking and tooling](#on-device-benchmarking-and-tooling)
+8. [Reproducible benchmarks/leaderboards](#reproducible-benchmarksleaderboards)
+9. [Deployment patterns (windowing/streaming/personalization)](#deployment-patterns-windowingstreamingpersonalization)
+10. [Efficiency reporting checklist for HAR papers](#efficiency-reporting-checklist-for-har-papers)
+11. [Edge HAR starter packs](#edge-har-starter-packs)
 
 ## Datasets (wearable/IMU/multimodal)
 
+- [WEAR](https://arxiv.org/abs/2304.05088) (2024) - Outdoor sports benchmark with synchronized inertial and egocentric video for wearable activity recognition in changing real-world conditions. `[📦 dataset] [💻 code] [🧪 benchmark]`
 - [KU-HAR](https://www.sciencedirect.com/science/article/pii/S0167865521000933) (2020) - Open HAR dataset for heterogeneous smartphone sensing with 18 daily activities and standardized splits. `[📦 dataset] [🧪 benchmark]`
 - [MotionSense](https://github.com/mmalekzadeh/motion-sense) (2019) - Motion data from iPhone sensors for activity and user context tasks. `[📦 dataset] [💻 code]`
 - [SHL Dataset (Sussex-Huawei Locomotion)](https://www.sussex.ac.uk/strc/research/wearable/locomotion-transportation) (2018) - Large-scale smartphone and wearable locomotion benchmark with official Sussex challenge resources. `[📦 dataset] [🧪 benchmark]`
@@ -45,7 +47,12 @@ This README is generated from `data/entries.yaml` via `scripts/generate_readme.p
 
 ## Lightweight architectures for time-series
 
+- [TinierHAR](https://arxiv.org/abs/2507.07949) (2025) - Ultra-lightweight HAR architecture that cuts parameters roughly 2.7x while holding accuracy across 14 benchmark datasets for edge deployment. `[📄 paper] [⚡ efficient] [📱 on-device] [💻 code]`
+- [HARMamba](https://arxiv.org/abs/2403.20183) (2024) - Bidirectional Mamba architecture for lightweight wearable HAR with linear-time sequence modeling for on-device use. `[📄 paper] [⚡ efficient] [📱 on-device]`
+- [TSCMamba](https://arxiv.org/abs/2406.04419) (2024) - Mamba state-space model with multi-view features and tango scanning for efficient multivariate time-series classification. `[📄 paper] [⚡ efficient] [🧪 benchmark]`
+- [Mamba](https://arxiv.org/abs/2312.00752) (2023) - Selective state-space sequence model with linear-time inference and high throughput as an efficient attention-free backbone. `[📄 paper] [⚡ efficient]`
 - [Hydra](https://arxiv.org/abs/2203.13652) (2022) - Competing convolutional kernels for fast and accurate time-series classification in low-latency settings. `[📄 paper] [⚡ efficient] [🧪 benchmark]`
+- [TimesNet](https://arxiv.org/abs/2210.02186) (2022) - General time-series backbone that models multi-period 2D temporal variation and serves as a strong HAR baseline. `[📄 paper] [🧪 benchmark]`
 - [MultiROCKET](https://arxiv.org/abs/2102.00457) (2021) - Extends ROCKET with multiple pooling operators and transformations for faster, accurate time-series classification. `[📄 paper] [⚡ efficient] [🧪 benchmark] [💻 code]`
 - [Benchmarking TinyML Systems: Challenges and Direction](https://arxiv.org/abs/2003.04821) (2020) - Surveys TinyML benchmarking challenges, including hardware variability, metrics, and reproducibility constraints for edge deployments. `[📄 paper] [⚡ efficient] [📱 on-device] [🧪 benchmark]`
 - [MiniROCKET](https://arxiv.org/abs/2012.08791) (2020) - Faster deterministic ROCKET variant with strong speed-accuracy tradeoff. `[📄 paper] [⚡ efficient] [🧪 benchmark]`
@@ -64,6 +71,7 @@ This README is generated from `data/entries.yaml` via `scripts/generate_readme.p
 
 ## Attention modules for sensor/time-series
 
+- [iTransformer](https://arxiv.org/abs/2310.06625) (2023) - Inverts the transformer to attend across variates instead of timestamps for efficient and accurate multivariate modeling. `[📄 paper] [🧩 attention] [⚡ efficient]`
 - [PatchTST](https://arxiv.org/abs/2211.14730) (2022) - Patching strategy for efficient transformer-style time-series representation. `[📄 paper] [🧩 attention]`
 - [Informer](https://arxiv.org/abs/2012.07436) (2020) - ProbSparse attention for long time-series encoding. `[📄 paper] [🧩 attention] [⚡ efficient]`
 - [Linformer](https://arxiv.org/abs/2006.04768) (2020) - Linear-complexity attention approximation for longer windows. `[📄 paper] [🧩 attention] [⚡ efficient]`
@@ -72,6 +80,13 @@ This README is generated from `data/entries.yaml` via `scripts/generate_readme.p
 - [CBAM](https://arxiv.org/abs/1807.06521) (2018) - Lightweight channel and spatial attention plug-in module. `[📄 paper] [🧩 attention]`
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762) (2017) - Transformer self-attention foundation for sequence modeling. `[📄 paper] [🧩 attention]`
 - [Squeeze-and-Excitation Networks](https://arxiv.org/abs/1709.01507) (2017) - Channel reweighting block often adapted to 1D sensor CNNs. `[📄 paper] [🧩 attention] [⚡ efficient]`
+
+## Self-supervised and foundation models for HAR
+
+- [RelCon](https://arxiv.org/abs/2411.18822) (2025) - Self-supervised relative contrastive learning that trains a wearable motion foundation model from large-scale accelerometer data. `[📄 paper] [⚡ efficient]`
+- [Scaling Wearable Foundation Models](https://arxiv.org/abs/2410.13638) (2024) - Studies scaling laws for multimodal wearable sensor foundation models across compute, data, and model size for tasks including activity recognition. `[📄 paper] [🧪 benchmark]`
+- [Assessing the State of Self-Supervised HAR using Wearables](https://arxiv.org/abs/2202.12938) (2022) - Systematic assessment of self-supervised HAR methods on wearables across robustness, dataset, and feature-space criteria. `[📄 paper] [🧪 benchmark]`
+- [Self-Supervised Learning with 700,000 Person-days of Wearable Data](https://arxiv.org/abs/2206.02909) (2022) - Self-supervised pretraining on 700,000 person-days of wearable data that improves label-efficient activity recognition. `[📄 paper] [⚡ efficient]`
 
 ## Knowledge distillation for HAR/time-series
 

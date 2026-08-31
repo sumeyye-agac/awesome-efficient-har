@@ -18,6 +18,7 @@ CATEGORY_ORDER = [
     "datasets",
     "lightweight_architectures",
     "attention_modules",
+    "self_supervised_foundation_models",
     "distillation",
     "quantization_pruning_compression",
     "on_device_benchmarking_tooling",

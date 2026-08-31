@@ -15,8 +15,9 @@ def test_generated_readme_contains_mandatory_sections():
 
     readme = render_readme(entries)
 
-    assert "## Legend" in readme
-    assert "## 1) Datasets (wearable/IMU/multimodal)" in readme
-    assert "## 8) Deployment patterns (windowing/streaming/personalization)" in readme
+    assert "Legend:" in readme
+    assert "## Datasets (wearable/IMU/multimodal)" in readme
+    assert "## Self-supervised and foundation models for HAR" in readme
+    assert "## Deployment patterns (windowing/streaming/personalization)" in readme
     assert "## Edge HAR starter packs" in readme
-    assert "## License" in readme
+    assert "MIT license." in readme

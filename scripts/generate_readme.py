@@ -29,6 +29,7 @@ CATEGORY_SECTIONS = [
     ("datasets", "Datasets (wearable/IMU/multimodal)"),
     ("lightweight_architectures", "Lightweight architectures for time-series"),
     ("attention_modules", "Attention modules for sensor/time-series"),
+    ("self_supervised_foundation_models", "Self-supervised and foundation models for HAR"),
     ("distillation", "Knowledge distillation for HAR/time-series"),
     ("quantization_pruning_compression", "Quantization/pruning/compression"),
     ("on_device_benchmarking_tooling", "On-device benchmarking and tooling"),
@@ -104,7 +105,7 @@ def render_readme(entries: list[dict]) -> str:
     lines.append("<!--lint disable awesome-github-->")
     lines.append("# Awesome Efficient HAR [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)")
     lines.append("")
-    lines.append("> This repository is under active development.")
+    lines.append("> Every entry is a verified primary source - deduplicated, link-checked in CI, and generated from a single `entries.yaml`. Built for choosing, building, and benchmarking efficient HAR models on wearables and edge devices.")
     lines.append("")
     lines.append("A curated list of resources for **efficient, edge, and wearable Human Activity Recognition (HAR)**.")
     lines.append("")
@@ -119,13 +120,14 @@ def render_readme(entries: list[dict]) -> str:
     lines.append("1. [Datasets (wearable/IMU/multimodal)](#datasets-wearableimumultimodal)")
     lines.append("2. [Lightweight architectures for time-series](#lightweight-architectures-for-time-series)")
     lines.append("3. [Attention modules for sensor/time-series](#attention-modules-for-sensortime-series)")
-    lines.append("4. [Knowledge distillation for HAR/time-series](#knowledge-distillation-for-hartime-series)")
-    lines.append("5. [Quantization/pruning/compression](#quantizationpruningcompression)")
-    lines.append("6. [On-device benchmarking and tooling](#on-device-benchmarking-and-tooling)")
-    lines.append("7. [Reproducible benchmarks/leaderboards](#reproducible-benchmarksleaderboards)")
-    lines.append("8. [Deployment patterns (windowing/streaming/personalization)](#deployment-patterns-windowingstreamingpersonalization)")
-    lines.append("9. [Efficiency reporting checklist for HAR papers](#efficiency-reporting-checklist-for-har-papers)")
-    lines.append("10. [Edge HAR starter packs](#edge-har-starter-packs)")
+    lines.append("4. [Self-supervised and foundation models for HAR](#self-supervised-and-foundation-models-for-har)")
+    lines.append("5. [Knowledge distillation for HAR/time-series](#knowledge-distillation-for-hartime-series)")
+    lines.append("6. [Quantization/pruning/compression](#quantizationpruningcompression)")
+    lines.append("7. [On-device benchmarking and tooling](#on-device-benchmarking-and-tooling)")
+    lines.append("8. [Reproducible benchmarks/leaderboards](#reproducible-benchmarksleaderboards)")
+    lines.append("9. [Deployment patterns (windowing/streaming/personalization)](#deployment-patterns-windowingstreamingpersonalization)")
+    lines.append("10. [Efficiency reporting checklist for HAR papers](#efficiency-reporting-checklist-for-har-papers)")
+    lines.append("11. [Edge HAR starter packs](#edge-har-starter-packs)")
     lines.append("")
 
     for category, heading in CATEGORY_SECTIONS:
