@@ -11,12 +11,19 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from scripts.generate_readme import ENTRIES_PATH, README_PATH, load_entries, render_readme
+from scripts.generate_readme import (
+    ENTRIES_PATH,
+    README_PATH,
+    load_entries,
+    load_last_updated,
+    render_readme,
+)
 
 
 def main() -> int:
     entries = load_entries(ENTRIES_PATH)
-    expected = render_readme(entries)
+    last_updated = load_last_updated(ENTRIES_PATH)
+    expected = render_readme(entries, last_updated)
     actual = README_PATH.read_text(encoding="utf-8")
 
     if actual == expected:

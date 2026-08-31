@@ -44,6 +44,14 @@ def load_entries(path: Path) -> list[dict]:
     return entries
 
 
+def load_last_updated(path: Path) -> str | None:
+    content = yaml.safe_load(path.read_text(encoding="utf-8"))
+    if not isinstance(content, dict):
+        return None
+    value = content.get("last_updated")
+    return str(value).strip() if value else None
+
+
 def select_link(links: dict) -> tuple[str | None, str | None]:
     if not isinstance(links, dict) or not links:
         return None, None
@@ -96,7 +104,7 @@ def format_entry(entry: dict) -> str:
     return line
 
 
-def render_readme(entries: list[dict]) -> str:
+def render_readme(entries: list[dict], last_updated: str | None = None) -> str:
     grouped: dict[str, list[dict]] = defaultdict(list)
     for entry in entries:
         grouped[entry["category"]].append(entry)
@@ -105,6 +113,9 @@ def render_readme(entries: list[dict]) -> str:
     lines.append("<!--lint disable awesome-github-->")
     lines.append("# Awesome Efficient HAR [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)")
     lines.append("")
+    if last_updated:
+        lines.append(f"_Last updated: {last_updated}._")
+        lines.append("")
     lines.append("A curated list of resources for **efficient, edge, and wearable Human Activity Recognition (HAR)**.")
     lines.append("")
     lines.append("Focus areas: wearable and smartphone sensor data (IMU, multimodal), compact models for time-series HAR, and on-device deployment with reliable benchmarking.")
@@ -163,7 +174,8 @@ def render_readme(entries: list[dict]) -> str:
 
 def main() -> int:
     entries = load_entries(ENTRIES_PATH)
-    readme = render_readme(entries)
+    last_updated = load_last_updated(ENTRIES_PATH)
+    readme = render_readme(entries, last_updated)
     README_PATH.write_text(readme, encoding="utf-8")
     return 0
 

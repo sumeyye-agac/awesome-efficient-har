@@ -1,6 +1,8 @@
 <!--lint disable awesome-github-->
 # Awesome Efficient HAR [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+_Last updated: 2026-08-31._
+
 A curated list of resources for **efficient, edge, and wearable Human Activity Recognition (HAR)**.
 
 Focus areas: wearable and smartphone sensor data (IMU, multimodal), compact models for time-series HAR, and on-device deployment with reliable benchmarking.
